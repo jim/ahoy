@@ -1,0 +1,24 @@
+{
+  "name": "ahoy",
+  "version": "0.1.0",
+  "description": "A browser extension that adds clickable links to a page's anchors.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jim/ahoy.git"
+  },
+  "author": "Jim Benton <jim@autonomousmachine.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jim/ahoy/issues"
+  },
+  "homepage": "https://github.com/jim/ahoy#readme",
+  "dependencies": {
+    "semistandard": "^16.0.1"
+  },
+  "semistandard": {
+    "globals": [ "browser" ]
+  }
+}

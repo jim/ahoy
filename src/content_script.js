@@ -1,3 +1,5 @@
+const browser = require("webextension-polyfill");
+
 (function () {
   /**
    * Check and set a global guard variable.

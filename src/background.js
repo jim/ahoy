@@ -1,3 +1,5 @@
+const browser = require("webextension-polyfill");
+
 function onClick (tab) {
   browser.tabs.executeScript({
     file: '/content_script.js'

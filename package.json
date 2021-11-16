@@ -2,9 +2,6 @@
   "name": "ahoy",
   "version": "0.1.0",
   "description": "A browser extension that adds clickable links to a page's anchors.",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jim/ahoy.git"
@@ -19,6 +16,26 @@
     "semistandard": "^16.0.1"
   },
   "semistandard": {
-    "globals": [ "browser" ]
+    "globals": [
+      "browser"
+    ]
+  },
+  "targets": {
+    "webext-dev": {
+      "sourceMap": {
+        "inline": true,
+        "inlineSources": true
+      }
+    },
+    "webext-prod": {}
+  },
+  "scripts": {
+    "start": "parcel src/manifest.json --host localhost --target webext-dev --config @parcel/config-webextension --hmr-port 1235",
+    "build": "parcel build src/manifest.json --target webext-prod --config @parcel/config-webextension"
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.0.1",
+    "parcel": "^2.0.1",
+    "webextension-polyfill": "^0.8.0"
   }
 }

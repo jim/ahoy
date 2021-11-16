@@ -1,3 +1,5 @@
+![an anchor](https://github.com/jim/ahoy/blob/main/src/icons/anchor-48.png?raw=true)
+
 # ahoy
 
 A browser extension that adds clickable links to every anchor on a webpage.
